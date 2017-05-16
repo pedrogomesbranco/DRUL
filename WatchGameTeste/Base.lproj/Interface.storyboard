@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hcw-Ts-Ptp">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Home Interface Controller-->
+        <scene sceneID="dwd-Vv-wMW">
+            <objects>
+                <controller id="Hcw-Ts-Ptp" customClass="HomeInterfaceController" customModule="WatchGameTeste_Extension">
+                    <items>
+                        <group width="118" height="61" alignment="center" spacing="0.0" id="GUa-Oq-3Wo">
+                            <items>
+                                <label width="27" height="63" alignment="left" text="D" textAlignment="center" numberOfLines="6" id="36R-LU-6Pa">
+                                    <color key="textColor" red="0.0049352822830000002" green="0.39326915140000002" blue="0.78804463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="52"/>
+                                    <variation key="device=watch38mm" width="33"/>
+                                    <variation key="device=watch42mm" width="38">
+                                        <fontDescription key="font" type="system" pointSize="62"/>
+                                    </variation>
+                                </label>
+                                <label width="25" height="63" alignment="left" text="R" textAlignment="center" numberOfLines="6" id="uxe-rp-Je7">
+                                    <color key="textColor" red="0.97953969240000005" green="0.14592513439999999" blue="0.034242719409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="52"/>
+                                    <variation key="device=watch38mm" width="33"/>
+                                    <variation key="device=watch42mm" width="40">
+                                        <fontDescription key="font" type="system" pointSize="62"/>
+                                    </variation>
+                                </label>
+                                <label width="24" height="63" alignment="left" text="U" textAlignment="center" numberOfLines="6" id="zvg-h9-dA3">
+                                    <color key="textColor" red="0.0" green="0.79895502330000001" blue="0.33428561690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="52"/>
+                                    <variation key="device=watch38mm" width="35"/>
+                                    <variation key="device=watch42mm" width="42">
+                                        <fontDescription key="font" type="system" pointSize="62"/>
+                                    </variation>
+                                </label>
+                                <label width="18" height="63" alignment="left" text="L" textAlignment="center" numberOfLines="6" id="Cp4-Bu-mhH">
+                                    <color key="textColor" red="0.95002144580000003" green="0.76597225670000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="52"/>
+                                    <variation key="device=watch38mm" width="29"/>
+                                    <variation key="device=watch42mm" width="33">
+                                        <fontDescription key="font" type="system" pointSize="62"/>
+                                    </variation>
+                                </label>
+                            </items>
+                            <variation key="device=watch38mm" height="49" width="127"/>
+                            <variation key="device=watch42mm" width="156"/>
+                        </group>
+                        <label width="134" height="26" alignment="center" verticalAlignment="center" text="RECORDE:" textAlignment="center" numberOfLines="6" id="SzA-T9-3E5">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <group width="1" height="50" alignment="left" verticalAlignment="center" layout="vertical" id="msp-xZ-1fU">
+                            <items>
+                                <button width="145" height="40" alignment="center" verticalAlignment="center" title="JOGAR" id="Xrg-9u-pxy">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
+                                    <variation key="device=watch38mm" height="50" width="130"/>
+                                    <variation key="device=watch42mm" height="64" width="150"/>
+                                    <connections>
+                                        <segue destination="AgC-eL-Hgc" kind="push" id="5Dz-90-e57"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm" height="40"/>
+                        </group>
+                        <button width="140" height="20" alignment="center" verticalAlignment="center" title="INSTRUÇÕES" id="fjk-Yx-3kK">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <variation key="device=watch38mm" height="19" width="130"/>
+                            <variation key="device=watch42mm" width="150"/>
+                            <connections>
+                                <segue destination="4x1-zv-aeG" kind="push" id="CBU-JY-fS0"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="recorde" destination="SzA-T9-3E5" id="JF8-6G-qvV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="225" y="257"/>
+        </scene>
+        <!--INSTRUCTIONS-->
+        <scene sceneID="vDX-Qn-Tng">
+            <objects>
+                <controller title="INSTRUCTIONS" id="4x1-zv-aeG">
+                    <items>
+                        <label width="147" height="49" alignment="center" text="DESLIZE O SEU DEDO NA DIREÇÃO INDICADA.                   " textAlignment="center" numberOfLines="12" id="2tF-l1-tpd">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <variation key="device=watch38mm" width="126">
+                                <fontDescription key="font" type="system" pointSize="10"/>
+                            </variation>
+                            <variation key="device=watch42mm" height="45"/>
+                        </label>
+                        <label width="136" height="43" alignment="center" verticalAlignment="center" text="CASO VOCÊ PERCA, DÊ UM TOQUE NA TELA PARA REINICIAR A PARTIDA." textAlignment="center" numberOfLines="12" id="QSl-Xd-J76">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <variation key="device=watch38mm" width="132">
+                                <fontDescription key="font" type="system" pointSize="10"/>
+                            </variation>
+                            <variation key="device=watch42mm" height="63" width="151"/>
+                        </label>
+                        <label width="145" height="49" alignment="center" verticalAlignment="bottom" text="VOCÊ SÓ TEM 1 SEGUNDO POR MOVIMENTO." textAlignment="center" numberOfLines="12" id="SdT-cq-Kk6">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <variation key="device=watch38mm" width="125">
+                                <fontDescription key="font" type="system" pointSize="10"/>
+                            </variation>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="225" y="563"/>
+        </scene>
+        <!--DRUL-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="DRUL" backgroundImage="Apple Watch" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchGameTeste_Extension">
+                    <items>
+                        <spriteKitScene width="128" height="145" alignment="center" verticalAlignment="center" id="eh2-bW-rMT">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="d55-4P-3kL">
+                                    <connections>
+                                        <action selector="handleSwipeWithSwipeGesture:" destination="AgC-eL-Hgc" id="izN-QP-DuR"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="2" id="MgZ-Mr-ddg">
+                                    <connections>
+                                        <action selector="handleSwipeWithSwipeGesture:" destination="AgC-eL-Hgc" id="Ry2-1m-zrF"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="4" id="MHB-Ef-0Zt">
+                                    <connections>
+                                        <action selector="handleSwipeWithSwipeGesture:" destination="AgC-eL-Hgc" id="esH-lt-shw"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="8" id="MRu-vv-arK">
+                                    <connections>
+                                        <action selector="handleSwipeWithSwipeGesture:" destination="AgC-eL-Hgc" id="z0v-rm-OOS"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <tapGestureRecognizer id="dKX-19-2YO">
+                                    <connections>
+                                        <action selector="handleTapWithSwipeGesture:" destination="AgC-eL-Hgc" id="c7G-lD-xDd"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <variation key="device=watch38mm" height="123" width="105"/>
+                            <variation key="device=watch42mm" height="129" width="119"/>
+                        </spriteKitScene>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.79895502330000001" blue="0.33428561690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="skInterface" destination="eh2-bW-rMT" id="Wme-JX-I9n"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="491" y="257"/>
+        </scene>
+    </scenes>
+</document>
