@@ -26,25 +26,6 @@ class HomeInterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
-        if userRecord.value(forKey: "recorde") == nil{
-            userRecord.set(0, forKey: "recorde")
-        }
-        recorde.setText("RECORDE: \(userRecord.value(forKey: "recorde") as! Int)")
-    }
-    
-    override func didAppear() {
-        super.didAppear()
-        
-        if userRecord.value(forKey: "recorde") == nil{
-            userRecord.set(0, forKey: "recorde")
-        }
-        recorde.setText("RECORDE: \(userRecord.value(forKey: "recorde") as! Int)")
-    }
-
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
